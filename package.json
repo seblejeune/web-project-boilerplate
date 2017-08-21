@@ -1,0 +1,52 @@
+{
+  "name": "web-project-boilerplate",
+  "version": "0.0.1-alpha",
+  "description": "Boilerplate to start web project with gulp and sass",
+  "main": "index.js",
+  "scripts": {
+    "clean-install": "rm -rf node_modules && npm install",
+    "clean-build": "gulp --gulpfile tools/gulp/gulpfile.js clean:build",
+    "clean-prod": "gulp --gulpfile tools/gulp/gulpfile.js clean:prod",
+    "serve": "gulp --gulpfile tools/gulp/gulpfile.js serve",
+    "build:dev": "gulp --gulpfile tools/gulp/gulpfile.js build",
+    "build:test": "gulp --gulpfile tools/gulp/gulpfile.js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/actito/web-project-boilerplate.git"
+  },
+  "keywords": [
+    "Web",
+    "SASS",
+    "Boilerplate"
+  ],
+  "author": {
+    "name": "Sébastien Lejeune",
+    "email": "sebastien.lejeune@actito.com",
+    "url": "http://www.actito.com"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/actito/web-project-boilerplate/issues"
+  },
+  "homepage": "https://github.com/actito/web-project-boilerplate#readme",
+  "devDependencies": {
+    "bemify": "^0.1.2",
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-flatten": "^0.3.1",
+    "gulp-help": "^1.6.1",
+    "gulp-image": "^2.10.1",
+    "gulp-inject": "^4.2.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-load-subtasks": "^1.1.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-util": "^3.0.8",
+    "normalize-scss": "^7.0.0",
+    "run-sequence": "^2.1.0"
+  }
+}
