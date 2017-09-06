@@ -6,6 +6,7 @@ var gutil = require('gulp-util');
 const fromRoot = require('../utils/from-root.js');
 
 const nodeModulesPath = fromRoot('node_modules/');
+const bowerPath = fromRoot('bower_components/');
 const buildPath = fromRoot('build/');
 const distPath = fromRoot('dist/');
 const scssPath = fromRoot('src/scss/');
@@ -65,8 +66,25 @@ module.exports = {
 		}
 	},
 	html: {
+		src_folder: htmlPath,
 		src: htmlPath + '/**/*.html',
 		build: buildPath,
+		inject: {
+			css: '../../build/css/*.css',
+			options: {
+					relative: true,
+					name: 'build',
+					starttag: '<!-- build:css -->',
+					endtag: '<!-- endbuild -->',
+					removeTags: true
+					// more options : https://github.com/klei/gulp-inject#api
+			}
+		}
+	},
+	bower: {
+		src: bowerPath,
+		src_json: fromRoot('bower.json'),
+		build: buildPath + 'lib'
 	},
 	js: {
 		src: jsPath + '/**/*.js',

@@ -6,6 +6,9 @@
 sassdoc
 
 node_modules/
+bower_components/
 
 logs
 *.log
+
+build/
