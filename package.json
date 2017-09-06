@@ -4,6 +4,8 @@
   "description": "Boilerplate to start web project with gulp and sass",
   "main": "index.js",
   "scripts": {
+    "start": "gulp --gulpfile tools/gulp/gulpfile.js serve",
+    "postinstall": "bower install",
     "clean-install": "rm -rf node_modules && rm -rf boiler_components && npm install && bower install",
     "clean-build": "gulp --gulpfile tools/gulp/gulpfile.js clean:build",
     "clean-prod": "gulp --gulpfile tools/gulp/gulpfile.js clean:prod",
