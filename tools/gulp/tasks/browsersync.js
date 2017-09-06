@@ -7,10 +7,10 @@
 // Tasks : 
 // serve
 
-var gulpSequence = require('gulp-sequence')
+//var runSequence = require('run-sequence').use(gulp)
 
 module.exports = function(gulp, $, config) {
-	gulp.task('serve','Launch browser sync server', gulpSequence(['js:copy:dev', 'sass:compile', 'img:copy:dev', 'fontawesome:copy'], 'html:copy:dev', 'bower:dev'), function() {
+	gulp.task('serve','Launch browser sync server', ['js:copy:dev', 'sass:compile', 'img:copy:dev', 'fontawesome:copy', 'html:copy:dev', 'bower:dev'], function() {
 		$.browserSync.init({
 			server: config.path.build
 		});

@@ -4,7 +4,7 @@
   "description": "Boilerplate to start web project with gulp and sass",
   "main": "index.js",
   "scripts": {
-    "clean-install": "rm -rf node_modules && npm install",
+    "clean-install": "rm -rf node_modules && rm -rf boiler_components && npm install && bower install",
     "clean-build": "gulp --gulpfile tools/gulp/gulpfile.js clean:build",
     "clean-prod": "gulp --gulpfile tools/gulp/gulpfile.js clean:prod",
     "serve": "gulp --gulpfile tools/gulp/gulpfile.js serve",
@@ -38,7 +38,7 @@
     "gulp-autoprefixer": "^4.0.0",
     "gulp-flatten": "^0.3.1",
     "gulp-help": "^1.6.1",
-    "gulp-image": "^2.10.1",
+    "gulp-image": "^3.0.0",
     "gulp-inject": "^4.2.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-load-subtasks": "^1.1.2",
