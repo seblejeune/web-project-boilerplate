@@ -5,11 +5,14 @@ var gutil = require('gulp-util');
 
 const fromRoot = require('../utils/from-root.js');
 
+const nodeModulesPath = fromRoot('node_modules/');
 const buildPath = fromRoot('build/');
 const distPath = fromRoot('dist/');
 const scssPath = fromRoot('src/scss/');
 const imgPath = fromRoot('src/img/');
-const htmlPath = fromRoot('src/page/');
+const htmlPath = fromRoot('src/pages/');
+const fontsPath = fromRoot('src/fonts/');
+const jsPath = fromRoot('src/js/');
 
 module.exports = {
 	path: {
@@ -17,7 +20,17 @@ module.exports = {
 		dist: distPath,
 		scss: scssPath,
 		img: imgPath,
-		html: htmlPath
+		html: htmlPath,
+		fonts: fontsPath,
+		js: jsPath,
+		nodeModules: nodeModulesPath
+	},
+	vendors: {
+		jsLibs: [
+			nodeModulesPath + 'jquery/dist/jquery.min.js'
+		],
+		cssLibs: [
+		]
 	},
 	sass: {
 		src: scssPath + '/**/*.{scss,sass}',
@@ -54,6 +67,16 @@ module.exports = {
 	html: {
 		src: htmlPath + '/**/*.html',
 		build: buildPath,
+	},
+	js: {
+		src: jsPath + '/**/*.js',
+		build: buildPath + 'js/'
+	},
+	fonts: {
+		fontawesome: {
+			src: fromRoot('node_modules/') + 'font-awesome-scss/fonts/**/*.*',
+			build: buildPath + 'fonts/'
+		}
 	},
 	// error handler
 	error: function(error) {
