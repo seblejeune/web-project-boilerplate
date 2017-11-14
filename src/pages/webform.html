@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	<link href="css/main.css" type="text/css" rel="stylesheet">
+
+	<title>Webform</title>
+</head>
+<body>
+<div class="main">
+	<h1>Title form</h1>
+	<form class="form">
+		<h3 class="form__element">Title form__element</h3>
+		<div class="form__element">
+			<label class="label form__label">Input radio</label>
+			<div class="form__control">
+				<input type="radio" id="type_particulier" name="type" value="particulier" class="input-radio">
+				<label class="label input-radio__label" for="type_particulier">Particulier</label>
+				<input type="radio" id="type_professioneel" name="type" value="professioneel" class="input-radio">
+				<label class="label input-radio__label" for="type_professioneel">Professioneel</label>
+			</div>
+		</div>
+		<div class="form__element">
+			<label class="label form__label">Input radio inline</label>
+			<div class="form__control form__control--inline">
+				<input type="radio" id="gender_man" name="gender" value="man" class="input-radio">
+				<label class="label input-radio__label" for="gender_man">De Heer</label>
+				<input type="radio" id="gender_woman" name="gender" value="woman" class="input-radio">
+				<label class="label input-radio__label" for="gender_woman">Mevrouw</label>
+			</div>
+		</div>
+		<div class="form__element">
+			<label class="label form__label">Input checkbox</label>
+			<div class="form__control">
+				<input type="checkbox" id="type_particuliercheckbox" name="typecheckbox" value="particuliercheckbox" class="input-checkbox">
+				<label class="label input-checkbox__label" for="type_particuliercheckbox">Particulier</label>
+				<input type="checkbox" id="type_professioneelcheckbox" name="typecheckbox" value="professioneelcheckbox" class="input-checkbox">
+				<label class="label input-checkbox__label" for="type_professioneelcheckbox">Professioneel</label>
+			</div>
+		</div>
+		<div class="form__element">
+			<label class="label form__label">Input checkbox inline</label>
+			<div class="form__control form__control--inline">
+				<input type="checkbox" id="gender_mancheckbox" name="gendercheckbox" value="mancheckbox" class="input-checkbox">
+				<label class="label input-checkbox__label" for="gender_mancheckbox">De Heer</label>
+				<input type="checkbox" id="gender_womancheckbox" name="gender" value="woman" class="input-checkbox">
+				<label class="label input-checkbox__label" for="gender_womancheckbox">Mevrouw</label>
+			</div>
+		</div>
+		<div class="form__element form__element--half">
+			<label class="label form__label" for="firstName">Input text</label>
+			<div class="form__control">
+				<input type="text" id="firstName" name="firstName" class="input">
+			</div>
+		</div>
+		<div class="form__element form__element--half">
+			<label class="label form__label" for="firstName">Textarea</label>
+			<div class="form__control">
+				<textarea id="textarea" name="textarea" class="textarea" ></textarea>
+			</div>
+		</div>
+		<div class="form__element form__element--half">
+			<label class="label form__label" for="firstName">Select</label>
+			<div class="form__control">
+				<select name="select" id="select" class="select">
+					<option value="---">---</option>
+					<option value="option01">Option 01</option>
+					<option value="option02">Option 02</option>
+					<option value="option03">Option 03</option>
+				</select>
+			</div>
+		</div>
+		<div class="form__element form__element--half">
+			<label class="label form__label" for="postalCode">Input number</label>
+			<div class="form__control">
+				<input type="number" id="postalCode" name="postalCode" class="input">
+			</div>
+		</div>
+		<div class="form__element form__element--half">
+			<label class="label form__label" for="emailAddress">Input email</label>
+			<div class="form__control">
+				<input type="email" id="emailAddress" name="emailAddress" class="input">
+			</div>
+		</div>
+		<div class="form__buttons-container">
+			<button type="submit" class="button">Volgende ></button>
+		</div>
+	</form>
+	<form class="form form--inline">
+		<h3 class="form__element">Title form__element</h3>
+		<div class="form__element">
+			<label class="label form__label">Input radio</label>
+			<div class="form__control">
+				<input type="radio" id="type_particulier" name="type" value="particulier" class="input-radio">
+				<label class="label input-radio__label" for="type_particulier">Particulier</label>
+				<input type="radio" id="type_professioneel" name="type" value="professioneel" class="input-radio">
+				<label class="label input-radio__label" for="type_professioneel">Professioneel</label>
+			</div>
+		</div>
+		<div class="form__element">
+			<label class="label form__label">Input radio inline</label>
+			<div class="form__control form__control--inline">
+				<input type="radio" id="gender_man" name="gender" value="man" class="input-radio">
+				<label class="label input-radio__label" for="gender_man">De Heer</label>
+				<input type="radio" id="gender_woman" name="gender" value="woman" class="input-radio">
+				<label class="label input-radio__label" for="gender_woman">Mevrouw</label>
+			</div>
+		</div>
+		<div class="form__element">
+			<label class="label form__label">Input checkbox</label>
+			<div class="form__control">
+				<input type="checkbox" id="type_particuliercheckbox" name="typecheckbox" value="particuliercheckbox" class="input-checkbox">
+				<label class="label input-checkbox__label" for="type_particuliercheckbox">Particulier</label>
+				<input type="checkbox" id="type_professioneelcheckbox" name="typecheckbox" value="professioneelcheckbox" class="input-checkbox">
+				<label class="label input-checkbox__label" for="type_professioneelcheckbox">Professioneel</label>
+			</div>
+		</div>
+		<div class="form__element">
+			<label class="label form__label">Input checkbox inline</label>
+			<div class="form__control form__control--inline">
+				<input type="checkbox" id="gender_mancheckbox" name="gendercheckbox" value="mancheckbox" class="input-checkbox">
+				<label class="label input-checkbox__label" for="gender_mancheckbox">De Heer</label>
+				<input type="checkbox" id="gender_womancheckbox" name="gender" value="woman" class="input-checkbox">
+				<label class="label input-checkbox__label" for="gender_womancheckbox">Mevrouw</label>
+			</div>
+		</div>
+		<div class="form__element">
+			<label class="label form__label">Input checkbox inline in success</label>
+			<div class="form__control form__control--inline has-success">
+				<input type="checkbox" id="gender_mancheckbox" name="gendercheckbox" value="mancheckbox" class="input-checkbox">
+				<label class="label input-checkbox__label" for="gender_mancheckbox">De Heer</label>
+				<input type="checkbox" id="gender_womancheckbox" name="gender" value="woman" class="input-checkbox">
+				<label class="label input-checkbox__label" for="gender_womancheckbox">Mevrouw</label>
+			</div>
+		</div>
+		<div class="form__element">
+			<label class="label form__label">Input checkbox inline in warning</label>
+			<div class="form__control form__control--inline has-warning">
+				<input type="checkbox" id="gender_mancheckbox" name="gendercheckbox" value="mancheckbox" class="input-checkbox">
+				<label class="label input-checkbox__label" for="gender_mancheckbox">De Heer</label>
+				<input type="checkbox" id="gender_womancheckbox" name="gender" value="woman" class="input-checkbox">
+				<label class="label input-checkbox__label" for="gender_womancheckbox">Mevrouw</label>
+			</div>
+		</div>
+		<div class="form__element">
+			<label class="label form__label">Input checkbox inline in error</label>
+			<div class="form__control form__control--inline has-error">
+				<input type="checkbox" id="gender_mancheckbox" name="gendercheckbox" value="mancheckbox" class="input-checkbox">
+				<label class="label input-checkbox__label" for="gender_mancheckbox">De Heer</label>
+				<input type="checkbox" id="gender_womancheckbox" name="gender" value="woman" class="input-checkbox">
+				<label class="label input-checkbox__label" for="gender_womancheckbox">Mevrouw</label>
+			</div>
+		</div>
+		<div class="form__element form__element--half">
+			<label class="label form__label" for="firstName">Input text</label>
+			<div class="form__control">
+				<input type="text" id="firstName" name="firstName" class="input">
+			</div>
+		</div>
+		<div class="form__element form__element--half">
+			<label class="label form__label" for="firstName">Input text success</label>
+			<div class="form__control has-success">
+				<input type="text" id="firstName" name="firstName" class="input">
+			</div>
+		</div>
+		<div class="form__element form__element--half">
+			<label class="label form__label" for="firstName">Input text warning</label>
+			<div class="form__control has-warning">
+				<input type="text" id="firstName" name="firstName" class="input">
+			</div>
+		</div>
+		<div class="form__element form__element--half">
+			<label class="label form__label" for="firstName">Input text error</label>
+			<div class="form__control has-error">
+				<input type="text" id="firstName" name="firstName" class="input">
+			</div>
+		</div>
+		<div class="form__element form__element--half">
+			<label class="label form__label" for="firstName">Textarea</label>
+			<div class="form__control">
+				<textarea id="textarea" name="textarea" class="textarea" ></textarea>
+			</div>
+		</div>
+		<div class="form__element form__element--half">
+			<label class="label form__label" for="firstName">Select</label>
+			<div class="form__control">
+				<select name="select" id="select" class="select">
+					<option value="---">---</option>
+					<option value="option01">Option 01</option>
+					<option value="option02">Option 02</option>
+					<option value="option03">Option 03</option>
+				</select>
+			</div>
+		</div>
+		<div class="form__element form__element--half">
+			<label class="label form__label" for="postalCode">Input number</label>
+			<div class="form__control">
+				<input type="number" id="postalCode" name="postalCode" class="input">
+			</div>
+		</div>
+		<div class="form__element form__element--half">
+			<label class="label form__label" for="emailAddress">Input email</label>
+			<div class="form__control">
+				<input type="email" id="emailAddress" name="emailAddress" class="input">
+			</div>
+		</div>
+		<div class="form__buttons-container">
+			<button type="submit" class="button">Volgende ></button>
+		</div>
+	</form>
+</div>
+
+</body>
+</html>

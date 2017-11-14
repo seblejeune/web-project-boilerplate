@@ -4,14 +4,23 @@
   "description": "Boilerplate to start web project with gulp and sass",
   "main": "index.js",
   "scripts": {
-    "start": "gulp --gulpfile tools/gulp/gulpfile.js serve",
-    "postinstall": "bower install",
-    "clean-install": "rm -rf node_modules && rm -rf boiler_components && npm install && bower install",
-    "clean-build": "gulp --gulpfile tools/gulp/gulpfile.js clean:build",
-    "clean-prod": "gulp --gulpfile tools/gulp/gulpfile.js clean:prod",
-    "serve": "gulp --gulpfile tools/gulp/gulpfile.js serve",
-    "build:dev": "gulp --gulpfile tools/gulp/gulpfile.js build",
-    "build:test": "gulp --gulpfile tools/gulp/gulpfile.js test"
+    "precommit": "lint-staged",
+    "clean-install": "rm -rf node_modules && npm install",
+    "sass-compile": "node tools/scripts/sass-compile",
+    "bemlinter": "node tools/scripts/bemlinter",
+    "start": "node tools/scripts/serve",
+    "css": "node tools/scripts/css",
+    "stylelint": "node tools/scripts/stylelint",
+    "local-publish": "node tools/utils/local-publish",
+    "prettier-stylelint": "prettier-stylelint -q",
+    "prettier-stylelint-fix": "prettier-stylelint --write"
+  },
+  "lint-staged": {
+    "*.scss": [
+      "npm run bemlinter",
+      "prettier-stylelint --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -32,29 +41,7 @@
     "url": "https://github.com/actito/web-project-boilerplate/issues"
   },
   "homepage": "https://github.com/actito/web-project-boilerplate#readme",
-  "devDependencies": {
-    "bemify": "^0.1.2",
-    "browser-sync": "^2.18.13",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-flatten": "^0.3.1",
-    "gulp-help": "^1.6.1",
-    "gulp-image": "^3.0.0",
-    "gulp-inject": "^4.2.0",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-load-subtasks": "^1.1.2",
-    "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-sequence": "^0.4.6",
-    "gulp-sourcemaps": "^2.6.0",
-    "gulp-util": "^3.0.8",
-    "main-bower-files": "^2.13.1",
-    "run-sequence": "^2.1.0"
-  },
   "dependencies": {
-    "jquery": "^3.2.1",
-    "normalize-scss": "^7.0.0",
-    "font-awesome-scss": "^1.0.0"
+    "@actito/sass-components": "0.0.1-alpha"
   }
 }
