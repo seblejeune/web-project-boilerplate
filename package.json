@@ -42,6 +42,6 @@
   },
   "homepage": "https://github.com/actito/web-project-boilerplate#readme",
   "dependencies": {
-    "@actito/sass-components": "0.0.1-alpha"
+    "@actito/sass-components": "0.0.2-alpha"
   }
 }
